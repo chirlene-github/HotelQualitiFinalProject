@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Rede de Hoteis Qualiti</string>
+    <string-array name="static_spinner">
+        <item>Hotel Jardim Botânico</item>
+        <item>Hotel Parque das Flores</item>
+        <item>Hotel Mar Atlântico</item>
+        <item>Hotel Qualiti Premium</item>
+    </string-array>
+    <string name="title_activity_cheapest_hotel">CheapestHotel</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+</resources>

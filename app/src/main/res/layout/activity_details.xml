@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/hotelimg"
+        android:layout_width="0dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="24dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/titlehotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jardimbotanico" />
+
+    <TextView
+        android:id="@+id/titlehotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Hotel Jardim Botânico"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelimg"/>
+
+    <ImageView
+        android:id="@+id/numberofstars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptiontext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/titlehotel"
+        app:layout_constraintTop_toBottomOf="@+id/titlehotel"
+        app:srcCompat="@drawable/starsjdb" />
+
+    <ImageView
+        android:id="@+id/acessibilityicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/natureicon"
+        app:layout_constraintStart_toStartOf="@+id/descriptiontext"
+        app:layout_constraintTop_toBottomOf="@+id/descriptiontext"
+        app:srcCompat="@drawable/ic_baseline_accessible_forward_24" />
+
+    <ImageView
+        android:id="@+id/natureicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/acessibilityicon"
+        app:layout_constraintTop_toBottomOf="@+id/descriptiontext"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_spa_24" />
+
+    <ImageView
+        android:id="@+id/animalsicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/reservationbutton"
+        app:layout_constraintStart_toEndOf="@+id/natureicon"
+        app:layout_constraintTop_toBottomOf="@+id/descriptiontext"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_pets_24" />
+
+    <ImageView
+        android:id="@+id/familyicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/reservationbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/animalsicon"
+        app:layout_constraintTop_toBottomOf="@+id/descriptiontext"
+        app:srcCompat="@drawable/ic_baseline_family_restroom_24" />
+
+    <Button
+        android:id="@+id/reservationbutton"
+        android:layout_width="133dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Reservar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/familyicon"
+        android:onClick="telaDeReserva"/>
+
+    <TextView
+        android:id="@+id/descriptiontext"
+        android:layout_width="376dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Todo o frescor e o aconchego do campo acompanha a diversão familiar, o romancismo de um fim de tarde e, principalmente, todo o luxo que apenas um hotel da rede Qualiti pode proporcionar."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/acessibilityicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/numberofstars"
+        app:layout_constraintTop_toBottomOf="@+id/numberofstars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
